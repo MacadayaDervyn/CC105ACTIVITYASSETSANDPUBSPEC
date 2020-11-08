@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
+void main() {
+  runApp(
+    MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
@@ -9,8 +11,10 @@ void main() => runApp(MaterialApp(
         ),
         body: Center(
           child: Image(
-              image: NetworkImage(
-                  'https://www.w3schools.com/w3css/img_lights.jpg')),
+            image: AssetImage('images/diamond.png'),
+          ),
         ),
       ),
-    ));
+    ),
+  );
+}
